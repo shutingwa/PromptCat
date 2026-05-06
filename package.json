@@ -1,0 +1,29 @@
+{
+  "name": "procedural-cat-pet",
+  "version": "1.0.0",
+  "description": "一个基于 GLSL 着色器的桌面交互小猫，内置习惯打卡与 GTD 备忘录",
+  "main": "main.js",
+  "author": "漕河泾第一大狗熊",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable"
+  },
+  "build": {
+    "appId": "com.漕河泾第一大狗熊.catpet",
+    "productName": "PromptCat",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable"
+    },
+    "portable": {
+      "artifactName": "${productName}_Portable_v${version}.${ext}"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^24.9.1"
+  }
+}
