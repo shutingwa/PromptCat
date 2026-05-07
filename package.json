@@ -1,7 +1,7 @@
 {
   "name": "procedural-cat-pet",
   "version": "1.0.0",
-  "description": "一个基于 GLSL 着色器的桌面交互小猫，内置习惯打卡与 GTD 备忘录",
+  "description": "一个基于 GLSL 高精度着色器的桌面交互小猫",
   "main": "main.js",
   "author": "漕河泾第一大狗熊",
   "license": "MIT",
@@ -10,8 +10,8 @@
     "build": "electron-builder --win portable"
   },
   "build": {
-    "appId": "com.漕河泾第一大狗熊.catpet",
-    "productName": "PromptCat",
+    "appId": "com.shuting.andycat",
+    "productName": "Andy的专属小猫", 
     "directories": {
       "output": "dist"
     },
@@ -19,11 +19,11 @@
       "target": "portable"
     },
     "portable": {
-      "artifactName": "${productName}_Portable_v${version}.${ext}"
+      "artifactName": "To_Andy_Happy_Anniversary.exe"
     }
   },
   "devDependencies": {
     "electron": "^28.3.3",
-    "electron-builder": "^24.9.1"
+    "electron-builder": "^24.13.3"
   }
 }
